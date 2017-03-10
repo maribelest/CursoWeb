@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    background-color: green;
+}
+div  p {
+    background-color: blue;
+}
+div > p {
+    background-color: yellow;
+}
+
+div + p{ background-color: magenta;
+}
+
+span ~ p{ background-color: red;
+}
+
+</style>
+</head>
+<body>
+<p>parrafo 0 fuera del div y antes</p>
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+  <p>Paragraph 3b in the div.</p>
+   <p>Paragraph 3c in the div.</p>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
